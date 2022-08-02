@@ -16,15 +16,29 @@
                     {{infoForCard.text}}
                 </span>
             </div>
+            <div class="col-12 mt-4">
+                <span class="description">
+                    <btnCommon :infoForBtn="infoForCard.btn"  :isWhite="isWhite" />
+                </span>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
+import btnCommon from './btnCommon.vue'
 export default {
     props : {
         infoForCard : Object,
-    }
+    },
+    components : {
+        btnCommon,
+    },
+    data : function(){
+        return{
+            isWhite : true
+        }
+    },
 }
 </script>
 

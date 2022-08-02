@@ -1,5 +1,5 @@
 <template>
-  <header class="container-fluid w-100 py-2">
+  <header class="container-fluid w-100 ">
         <div class="row" >
 
             <div class="col-lg-5 d-none d-xl-block">
@@ -138,7 +138,7 @@ export default {
                 text : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga adipisci aut consequatur nam! Eius quas labore aperiam non.',
                 btn : {
                     url : '#',
-                    text_btn : 'explore the menu' 
+                    txt_btn : 'explore the menu' 
                 }
             },
         }

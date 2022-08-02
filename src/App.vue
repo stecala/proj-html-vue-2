@@ -26,7 +26,8 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap');
 // font-family: 'Ibarra Real Nova', serif;
 @import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400;0,500;1,400&display=swap');
-
+// import btn
+@import './assets/style/btn.scss';
 :root{
   --dark : black;
   --txt-white : white;
@@ -36,4 +37,5 @@ export default {
 a{
   text-decoration: none;
 }
+
 </style>
