@@ -2,7 +2,7 @@
   <header class="container-fluid w-100 py-2">
         <div class="row" >
 
-            <div class="col-lg-5 d-none d-lg-block">
+            <div class="col-lg-5 d-none d-xl-block">
                  <div class="row pt-4 mb-5">
                     <div class="col-9 mx-auto big-logo-container">
                         <img src="/img/logo-restaurant-2x.png" alt="restaurant logo">
@@ -18,7 +18,7 @@
 
 
             <!-- navbar -->
-            <div class="col-12 col-lg-7 position-relative px-0">
+            <div class="col-12 col-lg-12 col-xl-7 position-relative px-0">
                 <div class="row align-items-center">
                     <div class="col-9 d-lg-none small-logo-container">
                         <img src="/img/logo-restaurant-2x.png" alt="restaurant logo">
