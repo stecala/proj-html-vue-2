@@ -22,6 +22,8 @@ export default {
 
 <style lang="scss">
 @import "~bootstrap/scss/bootstrap";
+// font-family: 'Catamaran', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap');
 :root{
   --dark : black;
   --txt-white : white;

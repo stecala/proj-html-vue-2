@@ -1,4 +1,28 @@
     // animation for dropdown
+    .hamburger-dropdown-container{
+        top: 45px;
+        right: 35px;
+        width: 50%;
+        ul{
+            list-style: none;
+            box-shadow: 10px 10px 10px rgba(63, 63, 63, 0.808);
+            background-color: var(--txt-white);    
+            li{
+                a{
+                    color: var(--dark);
+                    font-weight: 600;
+                    .unselected-dropdown-link{
+                            font-weight: 400;
+                            color: var(--dark-grey);
+                    }
+                    .selected-dropdown-link{
+                            font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+    
     .scale-in-tr {
         -webkit-animation: scale-in-tr 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         animation: scale-in-tr 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;

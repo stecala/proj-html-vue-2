@@ -1,11 +1,17 @@
 <template>
-  <header class="container-fluid w-100">
+  <header class="container-fluid w-100 py-2">
         <div class="row" >
 
             <div class="col-lg-5 d-none d-lg-block">
-                 <div class="row pt-4">
+                 <div class="row pt-4 mb-5">
                     <div class="col-9 mx-auto big-logo-container">
                         <img src="/img/logo-restaurant-2x.png" alt="restaurant logo">
+                    </div>
+                 </div>
+                 <!-- card -->
+                 <div class="row pt-5">
+                    <div class="col-6 mx-auto mt-5">
+                        <bannerCard :infoForCard="infoForCard" />
                     </div>
                  </div>
             </div>
@@ -69,6 +75,7 @@
 </template>
 
 <script>
+import bannerCard from './common/bannerCard.vue'
 export default {
     data(){
         return{
@@ -125,6 +132,15 @@ export default {
                     selected : false,
                 },
             ],
+            infoForCard : {
+                subtitle : 'the best table in town',
+                title : 'fine dining experience',
+                text : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga adipisci aut consequatur nam! Eius quas labore aperiam non.',
+                btn : {
+                    url : '#',
+                    text_btn : 'explore the menu' 
+                }
+            },
         }
     },
     methods:{
@@ -144,7 +160,10 @@ export default {
                 return 'scale-out-tr'
             }
         }
-    }
+    },
+    components : {
+        bannerCard,
+    },
 }
 </script>
 
@@ -170,29 +189,7 @@ export default {
             max-width: 300px;
         }
     }
-    .hamburger-dropdown-container{
-        top: 45px;
-        right: 35px;
-        width: 50%;
-        ul{
-            list-style: none;
-            box-shadow: 10px 10px 10px rgba(63, 63, 63, 0.808);
-            background-color: var(--txt-white);    
-            li{
-                a{
-                    color: var(--dark);
-                    font-weight: 600;
-                    .unselected-dropdown-link{
-                            font-weight: 400;
-                            color: var(--dark-grey);
-                    }
-                    .selected-dropdown-link{
-                            font-weight: 700;
-                    }
-                }
-            }
-        }
-    }
+
     .new-tile{
         font-size: 0.6rem;
         font-weight: bold;
