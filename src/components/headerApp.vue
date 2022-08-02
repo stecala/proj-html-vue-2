@@ -18,8 +18,8 @@
 
 
             <!-- navbar -->
-            <div class="col-12 col-lg-12 col-xl-7 position-relative px-0">
-                <div class="row align-items-center">
+            <div class="col-12 col-lg-12 col-xl-7 py-2 py-lg-0 position-relative px-0">
+                <div class="row align-items-center me-0">
                     <div class="col-9 d-lg-none small-logo-container">
                         <img src="/img/logo-restaurant-2x.png" alt="restaurant logo">
                     </div>
