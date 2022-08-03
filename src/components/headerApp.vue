@@ -9,8 +9,8 @@
                     </div>
                  </div>
                  <!-- card -->
-                 <div class="row pt-5">
-                    <div class="col-6 mx-auto mt-5">
+                 <div class="row ">
+                    <div class="col-6 mx-auto my-5">
                         <bannerCard :infoForCard="infoForCard" />
                     </div>
                  </div>
@@ -203,7 +203,7 @@ export default {
         color: var(--txt-white);
     }
     nav{
-        height: 100vh;
+        height: 100%;
         background-image: url('../../public/img/slider52x.jpg');
         background-position: 50% 75%;
         background-size: cover;
