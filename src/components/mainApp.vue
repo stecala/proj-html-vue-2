@@ -1,6 +1,6 @@
 <template>
   <main>
-      <promoMain />
+    <promoMain />
   </main>
 </template>
 

@@ -204,6 +204,7 @@ export default {
     }
     nav{
         height: 100%;
+        min-height: 100vh;
         background-image: url('../../public/img/slider52x.jpg');
         background-position: 50% 75%;
         background-size: cover;
