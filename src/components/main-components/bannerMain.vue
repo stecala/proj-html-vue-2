@@ -1,11 +1,11 @@
 <template>
-  <div class="my-margin container-fluid">
+  <div class="mt-5 pt-lg-5 container-fluid">
     <div class="row">
         <div class="col-12 col-lg-7 img-banner">
         </div>
         <div class="col-5 d-none d-lg-block bg-black">
             <div class="row ">
-                <div class="col-6 mx-auto my-5">
+                <div class="col-6 mx-auto mb-5 my-margin">
                     <bannerCard :infoForCard="infoForCard" />
                 </div>
             </div>
@@ -40,7 +40,7 @@ export default {
     .container-fluid{
         .img-banner{
             padding: 0;
-            min-height: 500px;
+            min-height: 350px;
             background-image: url('../../../public/img/slider32x.jpg');
             background-size: cover;
             background-position-y: 60%;
