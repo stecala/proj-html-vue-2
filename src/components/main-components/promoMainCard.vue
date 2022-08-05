@@ -1,5 +1,5 @@
 <template>
-  <div class="col-12 col-lg-4 p-4">
+  <div class="col-12 col-lg-4 p-4 shadow">
     <div class="row">
         <div class="col-6 mx-auto d-flex justify-content-center">
             <img :src="card.img" alt="sushi">
@@ -45,5 +45,7 @@ export default {
     font-size: 1.4rem;
     min-height: 68px;
 }
-
+.shadow{
+    box-shadow: 10px 10px 1px rgba(49, 49, 49, 0.734);
+}
 </style>
