@@ -11,10 +11,10 @@
                   </span>
                 </div>
                 <div class="col-12 mt-4  text-uppercase ">
-                  <span class="title-lg d-none d-lg-block pe-lg-5 ">
+                  <span class="title-lg d-none d-lg-block pe-lg-5 " @click="startEasterEgg()">
                       food is our common ground, a universal experience.
                   </span>
-                  <span class="d-lg-none title-smartphone ">
+                  <span class="d-lg-none title-smartphone " @click="startEasterEgg()">
                       <strong>food is our common ground, a universal experience.</strong>
                   </span>
                 </div>
@@ -31,7 +31,7 @@
         </div>
 
         <!-- img part -->
-        <div class="d-none d-md-block col-md-6"  @click="startEasterEgg()">
+        <div class="d-none d-md-block col-md-6"  >
             <div class="img-container position-relative">
                 <img src="/img/info22x.jpg" alt="california roll">
                 <div class="position-absolute txt-absolute">
@@ -52,14 +52,46 @@
 
 <script>
 export default {
-  data : function(){
-    return{
-      counterEasterEgg : 0
-    }
-  },
   methods : {
     startEasterEgg(){
       this.counterEasterEgg++
+    }
+  },
+  data : function(){
+    return{
+      counterEasterEgg : 0,
+      cardsInfoPromo : [
+        {
+          id : 0,
+          img : '/img/sushi-1.png',
+          title : 'the best table in town',
+          txt : 'sed aenean egestas ut aliquam turpis mauris, molestie. Vitae tellus tempor sem id tempus neque, tellus turpis turpis. Morbi tortor id gravida aliquet.',
+          btn : {
+            url : '#',
+            'txt_btn' : 'explore the menu',
+            }
+        },
+        {
+          id : 1,
+          img : '/img/sushi-2.png',
+          title : 'perfect for groups',
+          txt : 'sed aenean egestas ut aliquam turpis mauris, molestie. Vitae tellus tempor sem id tempus neque, tellus turpis turpis. Morbi tortor id gravida aliquet.',
+          btn : {
+            url : '#',
+            'txt_btn' : 'make a reservation',
+            }
+        },
+        {
+          id : 2,
+          img : '/img/sushi-3.png',
+          title : 'fresh product everyday',
+          txt : 'sed aenean egestas ut aliquam turpis mauris, molestie. Vitae tellus tempor sem id tempus neque, tellus turpis turpis. Morbi tortor id gravida aliquet.',
+          btn : {
+            url : '#',
+            'txt_btn' : 'learn more about us',
+            }
+        },
+      ],
     }
   }
 }
@@ -97,9 +129,11 @@ export default {
   font-size: 2.6rem;
   font-weight: 700;
   line-height: 1.5;
+  cursor: pointer;
 }
 .title-smartphone{
   font-size: 1.4rem;
+  cursor: pointer;
 }
 .col-6 > img{
   width: 100%;
