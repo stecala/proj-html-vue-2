@@ -3,7 +3,7 @@
     left: -10%;
     animation: movingRight linear infinite;
     animation-duration: 10s;
-    z-index: -1;
+    z-index: 0;
     width: 100px;
     img{
       width: 100%;
@@ -28,7 +28,7 @@
     right: 0;
     animation: movingLeft linear infinite;
     animation-duration: 15s;
-    z-index: -1;
+    z-index: 0;
     width: 100px;
     img{
       width: 100%;

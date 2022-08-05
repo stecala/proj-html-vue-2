@@ -40,6 +40,7 @@
             </div>
         </div>
     </div>
+
     <!-- easteregg part -->
     <div class="position-absolute" :class="counterEasterEgg >= 5 ? 'animation-to-right' : 'd-none'">
         <img src="/img/bg-sushi.png" alt="">
@@ -47,18 +48,61 @@
     <div class="position-absolute" :class="counterEasterEgg >= 5 ? 'animation-to-left' : 'd-none'">
         <img src="/img/bg-sushi2.png" alt="">
     </div>
+
+    <!-- Cards part -->
+    <div class="row px-lg-5 mt-5 position-relative">
+      <promoMainCard v-for="card in cardsInfoPromo" :key="card.id" :class="{'d-none d-lg-block' : card.id != currentID }" :card="card"  />
+
+    <!-- button carousel -->
+      <div class="position-absolute previous-card d-lg-none" @click="goPrev() ; clickAnimationPrev()" :class="{'jello-horizontal' : clickPrev}">
+        <i class="fa-solid fa-angle-left"></i>
+      </div>
+
+      <div class="position-absolute next-card d-lg-none" @click="goNext() ; clickAnimationNext()" :class="{'jello-horizontal' : clickNext}">
+        <i class="fa-solid fa-angle-right"></i>
+      </div>
+    </div>
   </div>   
 </template>
 
 <script>
+import promoMainCard from './promoMainCard.vue'
 export default {
+  components :{
+    promoMainCard,
+  },
   methods : {
     startEasterEgg(){
       this.counterEasterEgg++
+    },
+    goNext(){
+      this.currentID ++
+      if(this.currentID > this.cardsInfoPromo.length -1){
+        this.currentID = 0
+      }
+    },
+    clickAnimationNext(){
+      this.clickNext = true
+      setTimeout(()=>{
+        this.clickNext = false
+      },500)
+    },
+    goPrev(){
+      this.currentID --
+      if(this.currentID < 0){
+        this.currentID = this.cardsInfoPromo.length -1
+      }
+    },
+    clickAnimationPrev(){
+      this.clickPrev = true
+      setTimeout(()=>{
+        this.clickPrev = false
+      },500)
     }
   },
   data : function(){
     return{
+      currentID : 0,
       counterEasterEgg : 0,
       cardsInfoPromo : [
         {
@@ -92,6 +136,8 @@ export default {
             }
         },
       ],
+      clickNext : false,
+      clickPrev : false,
     }
   }
 }
@@ -99,11 +145,13 @@ export default {
 
 <style scoped lang="scss">
 @import '../../assets/style/animationEasterEgg.scss';
+@import '../../assets/style/sliderPromo.scss';
 .img-container{
   min-height: 700px;
   height: 100%;
   transition: all 0.5s;
-  z-index: 2;
+  position: relative;
+  z-index: 1;
   img{
     width: 100%;
     height: 100%;
@@ -124,19 +172,26 @@ export default {
 .txt-container{
   line-height: 1.8;
   font-size: 1.2rem;
+  position: relative;
+  z-index: 1;
 }
 .title-lg{
   font-size: 2.6rem;
   font-weight: 700;
   line-height: 1.5;
   cursor: pointer;
+  position: relative;
+  z-index: 1;
 }
 .title-smartphone{
   font-size: 1.4rem;
   cursor: pointer;
+  position: relative;
+  z-index: 1;
 }
 .col-6 > img{
   width: 100%;
+  z-index: -1;
 }
 
 
