@@ -43,26 +43,29 @@ export default {
 </script>
 
 <style scoped lang="scss">
-    .subtitle{
-        font-family: 'Catamaran', sans-serif;
-        &::before{
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: - 90px;
-            background-color: var(--txt-white);
-            height: 1px;
-            width: 50px;
+    .row{
+        color : var(--txt-white);
+        .subtitle{
+            font-family: 'Catamaran', sans-serif;
+            &::before{
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: - 90px;
+                background-color: var(--txt-white);
+                height: 1px;
+                width: 50px;
+            }
         }
-    }
-    .title{
-        font-size: 2.7rem;
-        line-height: 1.5;
-        font-weight: 700;
-    }
-    .description{
-        font-size: 1.2rem;
-        line-height: 1.7;
-        font-family: 'Ibarra Real Nova', serif;
+        .title{
+            font-size: 2.7rem;
+            line-height: 1.5;
+            font-weight: 700;
+        }
+        .description{
+            font-size: 1.2rem;
+            line-height: 1.7;
+            font-family: 'Ibarra Real Nova', serif;
+        }
     }
 </style>
