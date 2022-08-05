@@ -37,5 +37,11 @@ export default {
 a{
   text-decoration: none;
 }
-
+.my-margin{
+  margin-top: 120px;
+}
+.divider{
+  height: 1px;
+  background-color: var(--dark-grey);  
+}
 </style>

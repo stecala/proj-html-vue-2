@@ -50,8 +50,8 @@
     </div>
 
     <!-- Cards part -->
-    <div class="row px-lg-5 mt-5 position-relative">
-      <promoMainCard v-for="card in cardsInfoPromo" :key="card.id" :class="{'d-none d-lg-block' : card.id != currentID }" :card="card"  />
+    <div class="row px-lg-5 my-margin position-relative">
+      <promoMainCard v-for="card in cardsInfoPromo" :key="card.id" :class="{'d-none d-lg-block' : card.id != currentID }" :card="card" :isWhite="isWhite" />
 
     <!-- button carousel -->
       <div class="position-absolute previous-card d-lg-none" @click="goPrev() ; clickAnimationPrev()" :class="{'jello-horizontal' : clickPrev}">
@@ -109,7 +109,7 @@ export default {
           id : 0,
           img : '/img/sushi-1.png',
           title : 'the best table in town',
-          txt : 'sed aenean egestas ut aliquam turpis mauris, molestie. Vitae tellus tempor sem id tempus neque, tellus turpis turpis. Morbi tortor id gravida aliquet.',
+          txt : 'Sed aenean egestas ut aliquam turpis mauris, molestie. Vitae tellus tempor sem id tempus neque, tellus turpis turpis. Morbi tortor id gravida aliquet.',
           btn : {
             url : '#',
             'txt_btn' : 'explore the menu',
@@ -119,7 +119,7 @@ export default {
           id : 1,
           img : '/img/sushi-2.png',
           title : 'perfect for groups',
-          txt : 'sed aenean egestas ut aliquam turpis mauris, molestie. Vitae tellus tempor sem id tempus neque, tellus turpis turpis. Morbi tortor id gravida aliquet.',
+          txt : 'Sed aenean egestas ut aliquam turpis mauris, molestie. Vitae tellus tempor sem id tempus neque, tellus turpis turpis. Morbi tortor id gravida aliquet.',
           btn : {
             url : '#',
             'txt_btn' : 'make a reservation',
@@ -129,7 +129,7 @@ export default {
           id : 2,
           img : '/img/sushi-3.png',
           title : 'fresh product everyday',
-          txt : 'sed aenean egestas ut aliquam turpis mauris, molestie. Vitae tellus tempor sem id tempus neque, tellus turpis turpis. Morbi tortor id gravida aliquet.',
+          txt : 'Sed aenean egestas ut aliquam turpis mauris, molestie. Vitae tellus tempor sem id tempus neque, tellus turpis turpis. Morbi tortor id gravida aliquet.',
           btn : {
             url : '#',
             'txt_btn' : 'learn more about us',
@@ -138,6 +138,7 @@ export default {
       ],
       clickNext : false,
       clickPrev : false,
+      isWhite : false,
     }
   }
 }
