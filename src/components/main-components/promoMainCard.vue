@@ -4,8 +4,8 @@
         <div class="col-6 mx-auto d-flex justify-content-center">
             <img :src="card.img" alt="sushi">
         </div>
-        <div class="col-12 mt-5 text-center title">
-            <span class="text-uppercase">
+        <div class="col-12 mt-5 justify-content-center title d-flex align-items-center">
+            <span class="text-uppercase text-center">
                 {{card.title}}
             </span>
         </div>
