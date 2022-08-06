@@ -21,7 +21,7 @@ export default {
 
 <style scoped lang="scss">
 .title{
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-family: 'Roboto Mono', monospace;
     font-style: italic;
     
