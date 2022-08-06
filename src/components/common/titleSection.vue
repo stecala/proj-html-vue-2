@@ -1,5 +1,5 @@
 <template>
-  <div class="container-lg mt-5 pt-5 mb-5">
+  <div class="container-lg mt-5 pt-5 ">
     <div class="row">
         <div class="col-12 text-center">
             <span class="text-center title">

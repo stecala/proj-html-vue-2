@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="row">
     
   </div>
 </template>
@@ -10,6 +10,6 @@ export default {
 }
 </script>
 
-<style>
+<style scoped lang="scss">
 
 </style>

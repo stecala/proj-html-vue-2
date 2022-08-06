@@ -61,6 +61,7 @@ export default {
             font-size: 2.7rem;
             line-height: 1.5;
             font-weight: 700;
+            min-height: 123px;
         }
         .description{
             font-size: 1.2rem;
