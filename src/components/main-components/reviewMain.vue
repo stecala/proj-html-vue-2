@@ -32,7 +32,7 @@ export default {
           },
           btn : {
             url : '#',
-            text : 'read full article'
+            txt_btn : 'read full article'
           }
         },
         {
@@ -47,7 +47,7 @@ export default {
             },
           btn : {
             url : '#',
-            text : 'read full article'
+            txt_btn : 'read full article'
           } 
         },
         {
@@ -62,7 +62,7 @@ export default {
             },
           btn : {
             url : '#',
-            text : 'read full article'
+            txt_btn : 'read full article'
           } 
         },
       ], 

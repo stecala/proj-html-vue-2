@@ -44,6 +44,6 @@ a{
 }
 .divider{
   height: 1px;
-  background-color: var(--dark-grey);  
+  background-color: var(--silver);  
 }
 </style>
