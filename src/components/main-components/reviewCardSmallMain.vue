@@ -9,13 +9,18 @@
                     {{card.name}}
                 </span>
             </div>
-            <div class="col-12 my-4">
+            <div class="col-12 mt-4 mb-2">
                 <span class="title text-uppercase">
                     {{card.journal}}
                 </span>
             </div>
-            <div class="col-2 divider ms-3"></div>
-            <div class="col-12 mt-5 text">
+            <div class="col-12 mt-4">
+                <div v-for=" number in card.stars" :key="number" class="d-inline-block me-2">
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            <div class="col-2 divider mt-4 ms-3"></div>
+            <div class="col-12 mt-2 text">
                 <span>
                     {{card.txt.paragraph1}}<br>
                 </span>
@@ -86,9 +91,10 @@ export default {
     }
     .text{
         font-size: 1.2rem;
+        min-height: 250px;
         .spacer{
             width: 100%;
-            height: 30px;
+            height: 20px;
         }
     }
 }
